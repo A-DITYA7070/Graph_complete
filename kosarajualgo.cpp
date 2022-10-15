@@ -10,7 +10,7 @@ void dfs(int node,stack<int>&st,vector<int>&vis,vector<int>adj[]){
     st.push(node);
 }
 void revDfs(int node,vector<int>&vis,vector<int>transpose[]){
-    cout<<node<<"<--";
+    cout<<node<<"--";
     vis[node]=1;
     for(auto it:transpose[node]){
         if(!vis[it]){
